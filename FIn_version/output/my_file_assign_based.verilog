@@ -1,0 +1,8 @@
+module my_file(output out1, input in1, in2, in3, in4, in5);
+  wire w1, w2, w3, w4;
+  assign w1 = in1 | in5;
+  assign w2 = in2 & in3;
+  assign w3 = ~in4;
+  assign w4 = w1 & w2;
+  assign out1 = w3 & w4;
+endmodule

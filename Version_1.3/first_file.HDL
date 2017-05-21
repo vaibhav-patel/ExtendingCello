@@ -1,0 +1,8 @@
+module first_file(output out1, input in1, in2, in3, in4, in5);
+  wire w1, w2, w3, w4;
+  or (w1, in1, in5);
+  and (w2, in2, in3);
+  not (w3, in4);
+  and (w4, w1, w2);
+  and (out1, w3, w4);
+endmodule;

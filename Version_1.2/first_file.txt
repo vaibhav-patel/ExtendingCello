@@ -1,0 +1,3 @@
+module first_file(output out1, input in1);
+  not (out1, in1);
+endmodule;
